@@ -5,7 +5,14 @@ const Footer = () => {
     <footer className="border-t bg-white py-6 mt-auto">
       <div className="container mx-auto px-4 flex items-center justify-center gap-2">
         <Copyright className="h-4 w-4" />
-        <span>Lyvena.</span>
+        <a 
+          href="https://lyvena.xyz/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="hover:text-primary transition-colors"
+        >
+          Lyvena.
+        </a>
       </div>
     </footer>
   );
