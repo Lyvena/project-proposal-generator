@@ -61,22 +61,22 @@ const Index = () => {
 
   const features = [
     {
-      icon: <Lightbulb className="h-8 w-8" />,
+      icon: <Lightbulb className="h-8 w-8 text-yellow-500" />,
       title: "AI-Powered Proposals",
       description: "Transform your ideas into comprehensive proposals using advanced AI technology."
     },
     {
-      icon: <Brain className="h-8 w-8" />,
+      icon: <Brain className="h-8 w-8 text-purple-500" />,
       title: "Smart Analysis",
       description: "Get intelligent insights and suggestions to improve your proposals."
     },
     {
-      icon: <Sparkles className="h-8 w-8" />,
+      icon: <Sparkles className="h-8 w-8 text-blue-500" />,
       title: "Automated Generation",
       description: "Generate professional proposals in minutes, not hours."
     },
     {
-      icon: <Rocket className="h-8 w-8" />,
+      icon: <Rocket className="h-8 w-8 text-green-500" />,
       title: "Quick Start",
       description: "Easy to use interface with step-by-step guidance."
     }
@@ -108,12 +108,12 @@ const Index = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="h-full"
             >
-              <Card className="text-center h-full flex flex-col hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 flex flex-col items-center flex-1">
-                  <div className="mb-4 p-3 bg-primary/10 rounded-full">
+              <Card className="text-center h-full flex flex-col hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-t-4 border-t-primary/40 bg-white/80 backdrop-blur-sm">
+                <CardContent className="p-8 flex flex-col items-center flex-1">
+                  <div className="mb-6 p-4 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl shadow-inner">
                     {feature.icon}
                   </div>
-                  <h3 className="text-lg font-semibold mb-3">{feature.title}</h3>
+                  <h3 className="text-lg font-semibold mb-4 text-gray-800">{feature.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
                 </CardContent>
               </Card>
