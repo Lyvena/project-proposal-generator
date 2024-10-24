@@ -13,6 +13,7 @@ const Footer = () => {
         >
           Lyvena.
         </a>
+        <span>All rights reserved.</span>
       </div>
     </footer>
   );
