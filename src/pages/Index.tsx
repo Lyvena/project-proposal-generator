@@ -5,7 +5,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { Card, CardContent } from "@/components/ui/card";
 import ProposalForm from '@/components/ProposalForm';
 import ProposalPreview from '@/components/ProposalPreview';
-import { Lightbulb, Sparkles, Brain, Rocket } from "lucide-react";
+import { Lightbulb, Sparkles, ChartLine, Rocket } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Index = () => {
@@ -66,7 +66,7 @@ const Index = () => {
       description: "Transform your ideas into comprehensive proposals using advanced AI technology."
     },
     {
-      icon: <Brain className="h-8 w-8 text-purple-500" />,
+      icon: <ChartLine className="h-8 w-8 text-purple-500" />,
       title: "Smart Analysis",
       description: "Get intelligent insights and suggestions to improve your proposals."
     },
